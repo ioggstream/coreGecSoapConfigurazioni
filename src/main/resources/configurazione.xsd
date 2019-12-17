@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="configurazione" type="configurazione"/>
+
+  <xs:element name="contatto" type="contatto"/>
+
+  <xs:element name="indirizzo" type="indirizzo"/>
+
+  <xs:complexType name="configurazione">
+    <xs:sequence>
+      <xs:element name="id" type="xs:string" minOccurs="0"/>
+      <xs:element name="codSoc" type="xs:string" minOccurs="0"/>
+      <xs:element name="codConfig" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtaInizValid" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtaCanc" type="xs:string" minOccurs="0"/>
+      <xs:element name="listaMercati" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="flagMultimerc" type="xs:string" minOccurs="0"/>
+      <xs:element name="listaTemplate" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="codConto" type="xs:string" minOccurs="0"/>
+      <xs:element name="indCsv" type="xs:string" minOccurs="0"/>
+      <xs:element name="indMulti" type="xs:string" minOccurs="0"/>
+      <xs:element name="codConfigTipo" type="xs:string" minOccurs="0"/>
+      <xs:element name="codRapp" type="xs:string" minOccurs="0"/>
+      <xs:element name="codSistProv" type="xs:string" minOccurs="0"/>
+      <xs:element name="desDest" type="xs:string" minOccurs="0"/>
+      <xs:element name="note" type="xs:string" minOccurs="0"/>
+      <xs:element name="desMitt" type="xs:string" minOccurs="0"/>
+      <xs:element name="listaTipoLiv1" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="listaContatti" type="contatto" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="tmsUpdate" type="xs:string" minOccurs="0"/>
+      <xs:element name="codUtente" type="xs:string" minOccurs="0"/>
+      <xs:element name="indPregresso" type="xs:string" minOccurs="0"/>
+      <xs:element name="indValid" type="xs:string" minOccurs="0"/>
+      <xs:element name="oggetto" type="xs:string" minOccurs="0"/>
+      <xs:element name="codSogg" type="xs:string" minOccurs="0"/>
+      <xs:element name="indSsiExt" type="xs:string" minOccurs="0"/>
+      <xs:element name="codCliente" type="xs:string" minOccurs="0"/>
+      <xs:element name="indMhub" type="xs:string" minOccurs="0"/>
+      <xs:element name="listaIndirizzi" type="indirizzo" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="listaCanali" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="indSsiInt" type="xs:string" minOccurs="0"/>
+      <xs:element name="flagStor" type="xs:string" minOccurs="0"/>
+      <xs:element name="codFirma" type="xs:string" minOccurs="0"/>
+      <xs:element name="indInvio" type="xs:string" minOccurs="0"/>
+      <xs:element name="indUffOwn" type="xs:string" minOccurs="0"/>
+      <xs:element name="tmsInsert" type="xs:string" minOccurs="0"/>
+      <xs:element name="desBreve" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtaFineValid" type="xs:string" minOccurs="0"/>
+      <xs:element name="configVersion" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="contatto">
+    <xs:sequence>
+      <xs:element name="codContatto" type="xs:int" minOccurs="0"/>
+      <xs:element name="indAbilitato" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="indirizzo">
+    <xs:sequence>
+      <xs:element name="codIndrz" type="xs:int" minOccurs="0"/>
+      <xs:element name="attnTo" type="xs:string" minOccurs="0"/>
+      <xs:element name="addressDetails" type="xs:string" minOccurs="0"/>
+      <xs:element name="indAbilitato" type="xs:string" minOccurs="0"/>
+      <xs:element name="codRubRiga" type="xs:int" minOccurs="0"/>
+      <xs:element name="codModltInvio" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

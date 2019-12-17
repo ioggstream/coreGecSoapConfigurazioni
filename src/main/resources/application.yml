@@ -1,0 +1,10 @@
+spring:
+  profile: development
+  application:
+    name: "@project.artifactId@"
+    version: "@project.version@ (@env.GIT_COMMIT@)"
+
+connectors:
+#  bearCoreConfigurations:
+#    items:
+
