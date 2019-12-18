@@ -68,5 +68,39 @@
       <xs:element name="codModltInvio" type="xs:int" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
+  <xs:element name="findConfigurazioniValideRomo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="codSoc"  type="xs:string"/>
+        <xs:element name="codSistProv"  type="xs:string"/>
+        <xs:element name="codCliente"  type="xs:string"/>
+        <xs:element name="indCliente"  type="xs:string"/>
+        <xs:element name="codMerc"  type="xs:string"/>
+        <xs:element name="codCanale"  type="xs:string"/>
+        <xs:element name="filtroTemplateTradeSummary"  type="xs:string"/>
+        <xs:element name="acronimo"  type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fidnConfigurazioniValideRomoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="return" type="xs:boolean"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+<!--  <xs:message name="findConfigurazioniValideRomo">-->
+<!--    <xs:part name="codSoc" type="xs:string" />-->
+<!--    <xs:part name="codSistProv" type="xs:string" />-->
+<!--    <xs:part name="codCliente" type="xs:string" />-->
+<!--    <xs:part name="indCliente" type="xs:string" />-->
+<!--    <xs:part name="codMerc" type="xs:string" />-->
+<!--    <xs:part name="codCanale" type="xs:string" />-->
+<!--    <xs:part name="filtroTemplateTradeSummary" type="xs:string" />-->
+<!--    <xs:part name="acronimo" type="xs:string" />-->
+<!--  </xs:message>-->
+<!--  <xs:message name="findConfigurazioniValideRomoResponse">-->
+<!--    <xs:part name="return" type="xs:boolean" />-->
+<!--  </xs:message>-->
 </xs:schema>
 
